@@ -1,5 +1,5 @@
 /* 
- Reply Annotator Plugin v1.0 (https://github.com/lduarte1991/tags-annotator)
+ HighlightTags Annotator Plugin v1.0 (https://github.com/lduarte1991/tags-annotator)
  Copyright (C) 2014 Luis F Duarte
  License: https://github.com/lduarte1991/tags-annotator/blob/master/LICENSE.rst
  

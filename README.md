@@ -27,9 +27,8 @@ Furthermore, you will need to create an instance of Annotator with the plugin, a
 
 ```js
 	<script>
-		var 
     	var optionstags = {
-    		tag:{tagnumber1:color1,tagnumber2:color2}
+    		tag:{tagnumber1:"color1",tagnumber2:"color2"}
 		};
     	$('#div_id').annotator().annotator('addPlugin','HighlightTags',optionstags);
     </script>

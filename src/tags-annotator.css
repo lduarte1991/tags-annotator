@@ -62,32 +62,32 @@ div.token-input-dropdown p {
     color: #777;
 }
 
-div.token-input-dropdown ul {
+div.token-input-dropdown ol {
     margin: 0;
     padding: 0;
 }
 
-div.token-input-dropdown ul li {
+div.token-input-dropdown ol li {
     background-color: #fff;
     padding: 3px;
     margin: 0;
     list-style-type: none;
 }
 
-div.token-input-dropdown ul li.token-input-dropdown-item {
+div.token-input-dropdown ol li.token-input-dropdown-item {
     background-color: #fff;
 }
 
-div.token-input-dropdown ul li.token-input-dropdown-item2 {
+div.token-input-dropdown ol li.token-input-dropdown-item2 {
     background-color: #fff;
 }
 
-div.token-input-dropdown ul li em {
+div.token-input-dropdown ol li em {
     font-weight: bold;
     font-style: normal;
 }
 
-div.token-input-dropdown ul li.token-input-selected-dropdown-item {
+div.token-input-dropdown ol li.token-input-selected-dropdown-item {
     background-color: #3b5998;
     color: #fff;
 }

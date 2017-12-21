@@ -333,7 +333,7 @@ $.TokenList = function (input, url_or_data, settings) {
     var selected_dropdown_item = null;
 
     // The list to store the token items in
-    var token_list = $("<ul />")
+    var token_list = $("<ol />")
         .addClass(settings.classes.tokenList)
         .click(function (event) {
             var li = $(event.target).closest("li");
@@ -694,7 +694,7 @@ $.TokenList = function (input, url_or_data, settings) {
     function populate_dropdown (query, results) {
         if(results && results.length) {
             dropdown.empty();
-            var dropdown_ul = $("<ul>")
+            var dropdown_ol = $("<ol>")
                 .appendTo(dropdown)
                 .mouseover(function (event) {
                     select_dropdown_item($(event.target).closest("li"));
@@ -711,7 +711,7 @@ $.TokenList = function (input, url_or_data, settings) {
                 
                 this_li = find_value_and_highlight_term(this_li ,value[settings.propertyToSearch], query);            
                 
-                this_li = $(this_li).appendTo(dropdown_ul);
+                this_li = $(this_li).appendTo(dropdown_ol);
                 
                 if(index % 2) {
                     this_li.addClass(settings.classes.dropdownItem);
@@ -729,9 +729,9 @@ $.TokenList = function (input, url_or_data, settings) {
             show_dropdown();
 
             if(settings.animateDropdown) {
-                dropdown_ul.slideDown("fast");
+                dropdown_ol.slideDown("fast");
             } else {
-                dropdown_ul.show();
+                dropdown_ol.show();
             }
         } else {
             if(settings.noResultsText) {
@@ -1175,7 +1175,7 @@ Annotator.Plugin.HighlightTags = (function(_super) {
 
             // otherwise we prepare to loop through them
             var nonFlagTags = true;
-            var tokenList = "<ul class=\"token-input-list\">";
+            var tokenList = "<ol class=\"token-input-list\">";
 
             for (tagnum = 0; tagnum < annotation.tags.length; ++tagnum){
                 if (typeof this.annotator.plugins["Flagging"] !== 'undefined') {
@@ -1202,7 +1202,7 @@ Annotator.Plugin.HighlightTags = (function(_super) {
                     tokenList += "<li class=\"token-input-token\"><p>"+ annotation.tags[tagnum]+"</p></span></li>";
                 }
             }
-            tokenList += "</ul>";
+            tokenList += "</ol>";
             $(field).append(tokenList);
 
             // the field for tags is removed also if all the tags ended up being flags
